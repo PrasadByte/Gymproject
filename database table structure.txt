@@ -1,0 +1,68 @@
+Members Table:
+
+MemberID (Primary Key): Unique identifier for each member.
+First Name: First name of the member.
+Last Name: Last name of the member.
+Gender: Gender of the member.
+Date of Birth: Date of birth of the member.
+Email: Email address of the member.
+Phone Number: Contact number of the member.
+Address: Address of the member.
+Membership Start Date: Date when the membership begins.
+Membership End Date: Date when the membership expires.
+Membership Type: Type of membership (e.g., monthly, yearly).
+Employees Table:
+
+EmployeeID (Primary Key): Unique identifier for each employee.
+First Name: First name of the employee.
+Last Name: Last name of the employee.
+Gender: Gender of the employee.
+Date of Birth: Date of birth of the employee.
+Email: Email address of the employee.
+Phone Number: Contact number of the employee.
+Address: Address of the employee.
+Position: Job title or position of the employee.
+Hire Date: Date when the employee was hired.
+Salary: Salary of the employee.
+Classes Table:
+
+ClassID (Primary Key): Unique identifier for each class.
+Class Name: Name of the class.
+Description: Brief description of the class.
+InstructorID (Foreign Key referencing Employees): ID of the instructor who conducts the class.
+Day: Day of the week when the class is scheduled.
+Time: Time of the day when the class starts.
+Duration: Duration of the class.
+Max Capacity: Maximum number of participants allowed in the class.
+Instructors Table:
+
+InstructorID (Primary Key): Unique identifier for each instructor.
+First Name: First name of the instructor.
+Last Name: Last name of the instructor.
+Gender: Gender of the instructor.
+Date of Birth: Date of birth of the instructor.
+Email: Email address of the instructor.
+Phone Number: Contact number of the instructor.
+Address: Address of the instructor.
+Specialization: Area of expertise or specialization of the instructor.
+Equipment Table:
+
+EquipmentID (Primary Key): Unique identifier for each equipment item.
+Equipment Name: Name or type of equipment.
+Description: Description of the equipment.
+Quantity: Number of units available.
+Condition: Condition or status of the equipment (e.g., new, used, maintenance required).
+Payments Table:
+
+PaymentID (Primary Key): Unique identifier for each payment transaction.
+MemberID (Foreign Key referencing Members): ID of the member making the payment.
+Payment Date: Date when the payment was made.
+Amount: Amount paid.
+Payment Method: Method used for payment (e.g., cash, credit card, online transfer).
+Attendance Table:
+
+AttendanceID (Primary Key): Unique identifier for each attendance record.
+MemberID (Foreign Key referencing Members): ID of the member attending the class.
+ClassID (Foreign Key referencing Classes): ID of the class attended.
+Attendance Date: Date when the attendance was recorded.
+Attendance Time: Time when the attendance was recorded.
